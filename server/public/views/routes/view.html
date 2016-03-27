@@ -1,0 +1,10 @@
+<p>
+    <h2>Pets Available</h2>
+    <div ng-repeat="pet in petArray.response" class="pet">
+        <p>{{pet.name}}</p>
+        <p>{{pet.type}}</p>
+        <p>{{pet.age}}</p>
+        <p><img ng-src="{{pet.img}}" /></p>
+
+    </div>
+</p>

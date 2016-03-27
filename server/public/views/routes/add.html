@@ -1,0 +1,18 @@
+<p>
+    <h2>Add a Pet</h2>
+    <form ng-submit="submit(petObject)">
+        <label for="name">Name</label>
+        <input ng-model="petObject.name" type="text" name="name"/>
+
+        <label for="type">Type of Animal</label>
+        <input ng-model="petObject.type" type="text" name="type"/>
+
+        <label for="age">Age</label>
+        <input ng-model="petObject.age" type="number" name="age"/>
+
+        <label for="img">Image Url</label>
+        <input ng-model="petObject.img" type="text" name="img"/>
+
+        <input type="submit" value="Submit" />
+    </form>
+</p>
