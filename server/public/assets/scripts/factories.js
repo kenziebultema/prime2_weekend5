@@ -12,8 +12,8 @@ myApp.factory('PetService', ['$http', function($http){
     var deleteData = function(data){
         $http.delete('/pets/' + data).then(function(response){
             console.log('delete', response.data);
-            console.log('delete data?', data);
         });
+        getData();
     };
 
     var postData = function(data){

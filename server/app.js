@@ -50,12 +50,15 @@ app.post('/pets', function(req, res){
     })
 });
 
-app.delete('/pets/:_id', function(req, res){
+app.delete('/pets/:id', function(req, res){
     console.log('delete req', req.params);
-    var id = req.params;
 
-    res.send(req.params);
-    Pet.remove({_id: id});
+    Pet.remove({ _id: req.params.id }, function(err, data){
+        if(err){
+            console.log('err', err);
+        }
+        res.send(data);
+    });
 });
 
 app.get('/*', function(req, res){
