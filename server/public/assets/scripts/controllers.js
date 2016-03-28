@@ -13,6 +13,8 @@ myApp.controller('ViewController', ['$scope', 'PetService', function($scope, Pet
     console.log('view connected');
     petService.getData();
 
+    $scope.deleteData = petService.deleteData;
+
     $scope.petArray = petService.pet;
     console.log('pet array', $scope.petArray);
 }]);

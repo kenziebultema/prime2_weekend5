@@ -9,6 +9,13 @@ myApp.factory('PetService', ['$http', function($http){
         });
     };
 
+    var deleteData = function(data){
+        $http.delete('/pets/' + data).then(function(response){
+            console.log('delete', response.data);
+            console.log('delete data?', data);
+        });
+    };
+
     var postData = function(data){
         $http.post('/pets', data).then(function(response){
             console.log('post', response.data);
@@ -18,6 +25,7 @@ myApp.factory('PetService', ['$http', function($http){
     return {
         getData: getData,
         postData: postData,
+        deleteData: deleteData,
         pet: pet,
     };
 }]);

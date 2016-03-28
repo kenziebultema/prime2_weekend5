@@ -18,6 +18,8 @@ mongoose.model('Pet', new Schema({
     'type': String,
     'age': Number,
     'img': String
+}, {
+    collection: 'pets'
 }));
 
 var Pet = mongoose.model('Pet');
@@ -46,6 +48,14 @@ app.post('/pets', function(req, res){
         }
         res.send(data);
     })
+});
+
+app.delete('/pets/:_id', function(req, res){
+    console.log('delete req', req.params);
+    var id = req.params;
+
+    res.send(req.params);
+    Pet.remove({_id: id});
 });
 
 app.get('/*', function(req, res){

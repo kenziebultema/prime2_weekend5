@@ -1,10 +1,10 @@
-<p>
+<div class="container">
     <h2>Pets Available</h2>
     <div ng-repeat="pet in petArray.response" class="pet">
         <p>{{pet.name}}</p>
         <p>{{pet.type}}</p>
         <p>{{pet.age}}</p>
-        <p><img ng-src="{{pet.img}}" /></p>
-
+        <p><img ng-src="{{pet.img}}" class="img"/></p>
+        <button ng-click="deleteData(pet._id)">Delete</button>
     </div>
-</p>
+</div>

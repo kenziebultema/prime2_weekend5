@@ -3,7 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <title>Weekend 5</title>
+    <!-- STYLES -->
+    <link rel="stylesheet" href="/assets/styles/styles.css" />
 
+    <!-- SCRIPTS -->
     <script type="text/javascript" src="/assets/vendors/angular.min.js"></script>
     <script type="text/javascript" src="/assets/vendors/angular-route.min.js"></script>
     <script type="text/javascript" src="/assets/scripts/app.js"></script>
@@ -11,17 +14,13 @@
     <script type="text/javascript" src="/assets/scripts/factories.js"></script>
 </head>
 <body>
-    <ul>
-        <li>
-            <a href="#home">HOME</a>
-        </li>
-        <li>
-            <a href="#add">ADD</a>
-        </li>
-        <li>
-            <a href="#view">VIEW</a>
-        </li>
-    </ul>
+    <p class="links">
+        <a href="#home">HOME</a>
+
+        <a href="#add">ADD</a>
+
+        <a href="#view">VIEW</a>
+    </p>
     <main ng-view>
 
     </main>
