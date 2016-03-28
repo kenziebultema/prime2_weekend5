@@ -16,7 +16,7 @@ app.set('port', (process.env.PORT || 5000));
 mongoose.model('Pet', new Schema({
     'name': String,
     'type': String,
-    'age': Number,
+    'age': String,
     'img': String
 }, {
     collection: 'pets'

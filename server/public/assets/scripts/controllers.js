@@ -16,5 +16,5 @@ myApp.controller('ViewController', ['$scope', 'PetService', function($scope, Pet
     $scope.deleteData = petService.deleteData;
 
     $scope.petArray = petService.pet;
-    console.log('pet array', $scope.petArray);
+    // console.log('pet array', $scope.petArray);
 }]);

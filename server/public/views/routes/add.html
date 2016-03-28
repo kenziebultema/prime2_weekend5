@@ -2,16 +2,16 @@
     <h2>Add a Pet</h2>
     <form ng-submit="submit(petObject)">
         <label for="name">Name</label>
-        <input ng-model="petObject.name" type="text" name="name"/>
+        <input ng-model="petObject.name" type="text" name="name" placeholder="Enter animal name"/>
 
         <label for="type">Type of Animal</label>
-        <input ng-model="petObject.type" type="text" name="type"/>
+        <input ng-model="petObject.type" type="text" name="type" placeholder="Enter animal type"/>
 
         <label for="age">Age</label>
-        <input ng-model="petObject.age" type="number" name="age"/>
+        <input ng-model="petObject.age" type="text" name="age" placeholder="Enter animal age"/>
 
         <label for="img">Image Url</label>
-        <input ng-model="petObject.img" type="text" name="img"/>
+        <input ng-model="petObject.img" type="text" name="img" placeholder="Enter image url"/>
 
         <input type="submit" value="Submit" />
     </form>
